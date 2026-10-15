@@ -1,0 +1,28 @@
+QFG DYNAMICS 1.0.0 ALPHA — BLENDER 5.2 INSTALLATION
+
+1. Keep qfg_dynamics_blender_5_2_v1.0.0-alpha.zip compressed.
+2. Blender 5.2 -> Edit -> Preferences -> Extensions.
+3. Menu -> Install from Disk.
+4. Select the ZIP and enable QFG Dynamics 1.0.0 Alpha.
+5. 3D Viewport -> N -> QFG 5.2.
+
+Recommended first B6 smoke test:
+- open a reviewed Atlas scene or tag a few simple objects as ATLAS_NUCLEON sources;
+- Atlas Direct -> Extract Atlas Geometry;
+- B3 -> enable Atlas field and Build / Apply Atlas Field;
+- B4 -> enable bidirectional feedback and Capture B4 Anchors;
+- B5 -> assign reviewed neighbours / C3 symmetry group / angular freedom, then Capture B5 Constraints;
+- run Apply B4 Feedback Once or Run QFG Steps and confirm B5 diagnostics stay finite;
+- Initialize QFG Engine on NumPy 32^3;
+- B4 -> enable Bidirectional feedback and Auto-capture anchors;
+- keep Max translation/cycle <= 0.02 and Max rotation/cycle <= 1 degree initially;
+- click Apply B4 Feedback Once;
+- confirm moved/rotated/clipped counters, force/torque/work proxy and max anchor displacement are finite;
+- use Reset to B4 Anchors and verify the reviewed geometry is restored;
+- then try Run QFG Steps with Rebuild B3 after feedback enabled.
+
+B4 is a bounded CONDITIONAL relaxation bridge. Force/torque/work values are
+not SI-calibrated BSM-SG quantities. Bake and render in the same Blender session
+because the timeline cache is transient.
+
+B6: after B3/B4/B5 setup, select N/P/As/Sb, keep holdout hidden, run Run B6 Blind Relaxation, then reveal only after a frozen prediction exists.

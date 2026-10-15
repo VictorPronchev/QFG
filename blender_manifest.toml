@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+id = "qfg_lab_52"
+version = "1.0.0"
+name = "QFG Dynamics 1.0.0"
+tagline = "Simulation, structural dynamics and scientific visualization"
+maintainer = "Viktor Pronchev and contributors"
+type = "add-on"
+tags = ["3D View", "Animation", "Geometry Nodes"]
+blender_version_min = "5.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Viktor Pronchev and contributors"]
+
+[permissions]
+files = "Export simulation, spectra, and molecular result files"
+clipboard = "Copy an optional PyTorch installation command"
