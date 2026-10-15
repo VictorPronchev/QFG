@@ -1,3 +1,10 @@
+# QFG Dynamics
+
+Advanced field-driven physics and dynamics for Blender.
+
+[Website](https://bsm-sg-computing.com) ·
+[Documentation](https://github.com/VictorPronchev/QFG/tree/main/docs) ·
+[Quick Start](https://github.com/VictorPronchev/QFG/blob/main/docs/QFG_Dynamics_1.0.0-alpha_Quick_Start_and_Showcase_EN.pdf)
 Turn Blender scenes into interactive field-driven simulations.
 
 QFG Dynamics is an experimental physics and scientific-visualization extension for Blender 5.2 that combines 3D fields, 6-DoF dynamics, collisions, thermal effects, topology, structural constraints, and procedural scientific geometry inside one workflow.
