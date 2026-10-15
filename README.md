@@ -1,3 +1,85 @@
+Turn Blender scenes into interactive field-driven simulations.
+
+QFG Dynamics is an experimental physics and scientific-visualization extension for Blender 5.2 that combines 3D fields, 6-DoF dynamics, collisions, thermal effects, topology, structural constraints, and procedural scientific geometry inside one workflow.
+
+It is designed for artists, technical directors, researchers, and anyone who wants to explore motion and structure beyond conventional rigid-body simulation.
+
+### Highlights
+
+- Field-coupled 6-DoF body dynamics with forces, torques, contacts, drag, gravity, and collision response.
+- Interactive 3D scalar and reduced spinor field simulation.
+- Gaussian nodes, vortices, Hopf-ring structures, plane waves, boundaries, and custom field actors.
+- Thermal feedback, collision heating, HRM dual-frequency driving, and noise robustness tools.
+- Reduced topology, gauge, gravity, RF, plasma, cavity, MEMS, and quantum-control research modules.
+- BSM-SG / Atlas structural workflow with interaction graphs, orbital planes, field coupling, feedback, constraints, and blind relaxation.
+- Molecular scene creation and reduced geometry/energy proxy tools.
+- Timeline baking, visualization point clouds, density slices, debug overlays, telemetry, diagnostics, and export.
+- Deterministic simulation options for reproducible experiments.
+- Built-in showcase scenes for quickly exploring the engine.
+
+### Built for visual experimentation
+
+QFG Dynamics is especially useful for creating unusual motion, energetic structures, procedural scientific scenes, field-driven animation, abstract visual effects, technical visualization, and cinematic simulation concepts that are difficult to achieve with standard rigid-body tools alone.
+
+The extension can be used interactively inside Blender or through its Python SDK for scripted simulations and custom pipelines.
+
+QFG Dynamics 1.0.0 is an experimental research workbench. Some modules are reduced-order, proxy, or conditional models and should not be interpreted as experimentally validated physical laws without independent verification.
+## QFG Dynamics 1.0.0 — Initial Release
+
+The first public release of QFG Dynamics introduces a complete field-driven simulation and scientific-visualization environment for Blender 5.2.
+
+### Core simulation
+
+- 3D scalar and reduced spinor QFG field engine.
+- NumPy CPU backend with optional PyTorch CPU/CUDA support.
+- Configurable numerical grid, domain size, timestep, damping, cohesion, stability, and anisotropy.
+- Gaussian, vortex, Hopf-ring, plane-wave, boundary, detector, and custom scene actors.
+
+### 6-DoF dynamics
+
+- Field-coupled rigid-body translation and rotation.
+- Body-body and floor contacts.
+- Force and torque feedback.
+- Gravity, drag, restitution, friction, velocity limits, and deterministic replay.
+- Collision, force, torque, and runtime telemetry.
+
+### Visualization and animation
+
+- Density point-cloud visualization.
+- Density slices.
+- Force and torque debug overlays.
+- Timeline baking and cached playback.
+- Built-in showcase scenes and cinematic workflows.
+
+### Research modules
+
+- Thermal simulation and collision heating.
+- HRM dual-frequency drive and scan tools.
+- Reduced topology and Skyrme-style diagnostics.
+- Reduced gauge and weak-field gravity sectors.
+- RF resonator, plasma, cavity, and MEMS proxy models.
+- Yb quantum-control tools.
+- Molecular Creator and reduced optimization tools.
+
+### Atlas / BSM-SG workflow
+
+- Source geometry tagging and provenance tracking.
+- Interaction graph generation.
+- Orbital-plane analysis and structural envelopes.
+- Atlas-to-field coupling.
+- Field-to-geometry feedback.
+- Structural and angular constraints.
+- Blind relaxation workflow with reproducible protocol fingerprints.
+
+### Export and reproducibility
+
+- Session and diagnostic export.
+- Atlas reports.
+- Deterministic seeds.
+- Numerical convergence workflow.
+- Python SDK access for custom simulation pipelines.
+
+This is the first public release and the API and interface may continue to evolve.
 # QFG Lab 5.2 for Blender
 
 ## 1.0.0-alpha B6 — Blind Group-15 relaxation harness
